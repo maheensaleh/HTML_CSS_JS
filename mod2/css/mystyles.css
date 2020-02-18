@@ -1,0 +1,126 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+.row{
+	width: 100%
+}
+
+.style{
+	font-family:Arial ,sans-serif;
+	background-color: white/*#FFDEAD*/	;
+	font-size:15px;
+}
+
+h1{	
+	font-size: 1.75em;
+	color: white;
+}
+
+
+#header{
+	height: 60px;
+	text-align: center;
+	background-color: #800000
+}
+
+
+div>div>div{
+
+	width: 95%;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	background: white;
+	color: black;
+	overflow: auto;
+	border: 1px solid  black;
+	background: #eebf95;
+
+}
+
+p{
+	padding: 10px;
+	padding-top: 20px;
+}
+
+
+
+span{
+
+	width:80px;
+	height: 25px;
+	float: right;
+	color: black;
+	background: #eebe93;
+	border-left: 1px solid  black;
+	border-bottom: 1px solid  black;
+	padding-top: 2px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+#beef{
+	background: #DC143C;
+}
+
+#chicken{
+	background: #FF0000;
+}
+
+#sushi{
+	background: #e16666;
+
+}
+
+@media ( min-width: 992px){
+
+
+.col-lg-1{
+	float: left;
+	width: 100%;
+}
+.col-lg-4{
+	float: left;
+	width:33.33%;
+}
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+
+.col-md-6{
+	float: left;
+	width: 50%;
+
+}
+
+.col-md-1{
+	width: 100%;
+	float: left;
+}
+
+.col-md-1 div{
+	width:97.5%;
+	right: 1.125%;
+	margin-left: 1.125%;
+}
+}
+
+
+@media (max-width: 767px){
+
+.col-sm-1{
+
+	width: 100%;
+	float: left;
+
+}
+}
+
