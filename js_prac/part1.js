@@ -93,6 +93,10 @@ console.log(`${animated.comedy} is a great movie`)
 const { comedy, horror,barbie,harrypotter, barbie :{ animals} ,winxclub} = animated
 console.log(barbie,winxclub[0])
 
+// add properties to teh object
+animated.favourite = "spirit"
+
+console.log(animated)
 
 
 
