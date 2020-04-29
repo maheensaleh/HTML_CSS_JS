@@ -62,7 +62,7 @@ by_value($my_num);
 echo "<h3>for pass by value = $my_num ( no change)</h3><br>";
 
 by_ref($my_num);
-echo "<h3>for pass by value = $my_num (changed !!)</h3><br>";
+echo "<h3>for pass by value = $my_num (chan ged !!)</h3><br>";
 
 
 
