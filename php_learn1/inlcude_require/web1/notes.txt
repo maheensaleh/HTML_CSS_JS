@@ -1,0 +1,22 @@
+
+
+
+INCLUDE :
+
+include is used to add code from another file into your file
+
+if the file mentioned with include is not found, then we will ge an error for that part of the page ,
+whereas the rest of the page will be rendered in the browser
+
+
+
+
+
+REQUIRE:
+
+If we want to halt the page if a particular includ efile is not found then we use "require"
+
+REQUIRE_ONCE:
+
+if the requested file mentioned woth required_once is already inlcluded/required_once 
+i.e it has also been inlcuded once above, then it wont be called/added again
