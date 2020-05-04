@@ -1,0 +1,45 @@
+============== ABOUT WWW-HHTP-HTTPS-GET-POST============
+
+
+go to : https://www.w3schools.com/whatis/whatis_http.asp
+
+go to: https://www.w3schools.com/tags/ref_httpmethods.asp
+
+HTTP Methods:
+^^^^^^^^^^^^^
+
+-- GET
+-- POST
+-- PUT
+-- HEAD
+-- DELETE
+-- PATCH
+-- OPTIONS
+ 
+The GET Method
+GET is used to request data from a specified resource.
+
+The POST Method
+POST is used to send data to a server to create/update a resource.
+The data sent to the server with POST is stored in the request body of the HTTP request:
+
+The PUT Method
+PUT is used to send data to a server to create/update a resource.
+
+The HEAD Method
+HEAD is almost identical to GET, but without the response body.
+
+The DELETE Method
+The DELETE method deletes the specified resource.
+
+The OPTIONS Method
+The OPTIONS method describes the communication options for the target resource.
+
+
+
+
+
+diff in www and http
+
+
+
