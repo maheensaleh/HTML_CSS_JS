@@ -13,6 +13,4 @@ $final = (($a==true) ?
 echo "result is $final";
 
 
-
-
 ?>
