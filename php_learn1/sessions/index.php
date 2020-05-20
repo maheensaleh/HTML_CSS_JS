@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -14,6 +14,8 @@
 
     </head>
 
+
+<!-- ======================== PHP =========================== -->
 <?php
 
     // if (filter_has_var(INPUT_GET,"name") AND (filter_has_var(INPUT_GET,"email")) AND (filter_has_var(INPUT_GET,"contact_no")) ){
@@ -25,14 +27,33 @@
 
     if ( isset($_GET['name']) AND isset($_GET['email']) AND isset($_GET['contact_no'])){
 
-        $name=$_GET['name'];
-        $email=$_GET['email'];
-        $contact_no=$_GET['contact_no'];
+        $name=htmlentities($_GET['name']);
+        $email=htmlentities($_GET['email']);
+        $contact_no=htmlentities($_GET['contact_no']);
         $Complete;
     
         if ( !empty($name) AND (!empty($email)) AND (!empty($contact_no)) ){
-            // echo "complete data";
+            // echo "complete data";nkn
             $Complete=true;
+
+            //when form successfully submitted
+            if (isset($_GET['submit'])){
+                echo "form submitted";
+
+                session_start();
+                    $_SESSION['name']=$name;
+                    $_SESSION['email']=$email;
+                    $_SESSION['contact_no']=$contact_no;
+
+                    $alldata =[
+                        'name'=>$name,
+                        'contact_no'=>$contact_no
+                    ];
+                    $_SESSION['alldata']=serialize($alldata); //cz can only save strings in session 
+
+                header('Location: welcome.php');
+
+            }
 
         }
 
@@ -42,13 +63,10 @@
         }
     }
 
-
     ?>
 
 
-
-
-
+<!-- =================================HTML =========================== -->
 
     <body>
         <!--[if lt IE 7]>
@@ -103,7 +121,7 @@
 
             </div>
 
-            <button type="submit" class="btn btn-dark">Submit</button>
+            <button type="submit" class="btn btn-dark" name='submit'>Submit</button>
         </form> 
         </div>     
 
