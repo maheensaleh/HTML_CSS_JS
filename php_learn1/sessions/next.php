@@ -27,6 +27,7 @@
         }
 
         else{
+              
 
         $name = isset($_SESSION['name']) ? $_SESSION['name'] : "Guest";
 
