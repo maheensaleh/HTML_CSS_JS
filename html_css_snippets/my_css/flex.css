@@ -1,0 +1,23 @@
+
+
+.container{
+  background-color: coral;
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.elements{
+  width: 100px;
+  overflow: hidden;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px;
+  border-style: solid;
+  padding: 10px;
+  border-width: 3px;
+
+}

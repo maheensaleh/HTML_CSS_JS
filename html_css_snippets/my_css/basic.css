@@ -1,0 +1,130 @@
+/* tags */
+
+body{
+    font-family: sans-serif;
+    background-color: white ;
+    margin: 0px;
+    background-color: white;
+}
+
+
+
+h1{
+    padding-top: 20px ; 
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 5px ;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top:30px;
+    margin-bottom: 0px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* states */
+
+.posts:hover{
+    background: darkgray;
+    color: white;
+}
+
+.top-posts:hover{
+    background: darkgray;
+    color: white;
+}
+
+
+
+
+/* classes */
+.form{
+    border-radius: 3px;
+    margin: 20px;
+    background-color: darkgray;
+    padding: 10px;
+}
+
+.form-grp{
+
+    margin: 10px 5px 10px;
+
+}
+.clr{
+    clear: both;
+
+}
+
+.posts{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* multiple selectors */
+
+
+.form-grp label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-grp input{
+    width: 30%;
+    height:30px;
+    padding: 3px;
+}
+
+
+.form-grp textarea{
+    width: 50%;
+    height:30px;
+}
+
+.form-grp input[type="submit"]{
+    width: 10%;
+    height: 10%;
+    background: black;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+.top-posts{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+
+
+    border-radius: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+ 
+    box-sizing: border-box;
+
+
+}
+
+
