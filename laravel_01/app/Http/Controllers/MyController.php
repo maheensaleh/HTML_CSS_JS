@@ -9,19 +9,30 @@ class MyController extends Controller
     //
     public function index(){
         // return "hello";
-        return view("home");
+        $data = array(
+            'title' => "Laravel",
+            'details' => "This is home page"
+        );
+        return view('home')->with($data);
     }
 
     //
     public function about(){
-        // return "hello";
-        return view("about");
+        $data = array(
+            "title" => "About",
+            "details" => "This is about page"
+        );
+        return view("about")->with($data);
     }
 
     //
     public function dashboard(){
-        // return "hello";
-        return view("dashboard");
+        $data = array(
+            'title' => "Dashboard",
+            'details' => "This is dashboard page",
+            'names'=>['a','b']
+        );
+        return view("dashboard")->with($data);
     }
 
 

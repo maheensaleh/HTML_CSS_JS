@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +25,7 @@ Route::get('/about',[MyController::class,'about']);
 
 Route::get('/dashboard',[MyController::class,'dashboard']);
 
+Route::resource('/post',PostController::class);
 // Route::get('/test/{para}', function ($para) {
 //     return "tester is $para";
 // });
